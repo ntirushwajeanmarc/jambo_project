@@ -118,7 +118,7 @@ function App() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const response = await fetch('https://ef2b-105-178-104-218.ngrok-free.app/search', {
+    const response = await fetch('https://6435-105-178-104-122.ngrok-free.app/search', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -147,7 +147,7 @@ function App() {
     setIsLoading(true);
 
     try {
-      const response = await fetch('https://ef2b-105-178-104-218.ngrok-free.app/chat', {
+      const response = await fetch('https://6435-105-178-104-122.ngrok-free.app/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
