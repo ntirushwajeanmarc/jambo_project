@@ -18,7 +18,7 @@ export default defineConfig({
     ],
     cors: {
       origin: [
-        'https://b77d-105-178-104-218.ngrok-free.app',
+        'https://46b50944df7d.ngrok-free.app ',
         'http://localhost:5173',
         'http://127.0.0.1:5173'
       ],
