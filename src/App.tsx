@@ -101,7 +101,8 @@ export default function MyAutoChatbot() {
             <div className="flex-1 flex flex-col min-h-0">
               
               {/* Response Area */}
-              <div className="flex-1 px-4 sm:px-6 lg:px-8 py-6 bg-gray-50 min-h-[200px] max-h-full overflow-y-auto" style={{minHeight: 0}}>
+              <div className="flex-1 px-2 sm:px-6 lg:px-8 py-3 sm:py-6 bg-gray-50 min-h-[200px] max-h-full overflow-y-auto"
+                style={{minHeight: '40vh'}}>
                 {response ? (
                   <div className="space-y-4">
                     <div className="flex items-start space-x-3">
@@ -152,10 +153,10 @@ export default function MyAutoChatbot() {
               </div>
 
               {/* Input Section */}
-              <div className="px-4 sm:px-6 lg:px-8 py-4 lg:py-6 bg-white border-t border-gray-100">
-                <div className="space-y-4">
+              <div className="px-2 sm:px-6 lg:px-8 py-2 sm:py-4 lg:py-6 bg-white border-t border-gray-100">
+                <div className="space-y-2 sm:space-y-4">
                   {/* Input Fields */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3 lg:gap-4">
                     <div className="relative">
                       <label className="block text-xs font-medium text-gray-700 mb-1">
                         Car Brand
@@ -198,7 +199,7 @@ export default function MyAutoChatbot() {
                   </div>
 
                   {/* Action Buttons */}
-                  <div className="flex flex-col sm:flex-row gap-3 pt-2">
+                  <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 pt-1 sm:pt-2">
                     <button
                       onClick={handleSubmit}
                       disabled={isLoading}
