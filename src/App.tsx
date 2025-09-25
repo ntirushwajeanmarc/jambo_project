@@ -27,7 +27,7 @@ export default function MyAutoChatbot() {
     setIsLoading(true);
     const combinedPrompt = `Car Brand: ${carBrand}, Car Model: ${carModel}, Code: ${code}`;
     try {
-      const res = await fetch("https://73322e76ac5e.ngrok-free.app/ai", {
+      const res = await fetch("https://8e5f32ec69ef.ngrok-free.app/ai", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt: combinedPrompt }),
